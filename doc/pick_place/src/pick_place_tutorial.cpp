@@ -34,8 +34,12 @@
 
 /* Author: Ioan Sucan, Ridhwan Luthra*/
 
+#define _USE_MATH_DEFINES
+
 // ROS
 #include <ros/ros.h>
+
+#include <tf/transform_datatypes.h>
 
 // MoveIt!
 #include <moveit/planning_scene_interface/planning_scene_interface.h>

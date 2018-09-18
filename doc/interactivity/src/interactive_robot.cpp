@@ -271,6 +271,7 @@ bool InteractiveRobot::setGroupPose(const Eigen::Affine3d& pose)
 {
   desired_group_end_link_pose_ = pose;
   scheduleUpdate();
+  return true;
 }
 
 /* publish robot pose to rviz */
@@ -297,7 +298,7 @@ void InteractiveRobot::publishWorldState()
   marker.ns = "world_box";
   marker.id = 0;
   marker.type = visualization_msgs::Marker::CUBE;
-  marker.action = visualization_msgs::Marker::ADD;
+  marker.action = visualization_msgs::Marker::MK_ADD;
   marker.scale.x = WORLD_BOX_SIZE_;
   marker.scale.y = WORLD_BOX_SIZE_;
   marker.scale.z = WORLD_BOX_SIZE_;

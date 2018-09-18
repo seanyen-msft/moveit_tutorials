@@ -34,6 +34,8 @@
 
 /* Author: Sachin Chitta, Michael Lautman */
 
+#define _USE_MATH_DEFINES
+
 #include <pluginlib/class_loader.h>
 #include <ros/ros.h>
 
