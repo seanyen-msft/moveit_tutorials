@@ -1,11 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(moveit_tutorials)
 
-if(NOT MSVC)
-  add_compile_options(-std=c++11)
-else()
-  add_compile_options(/Zc:__cplusplus)
-endif()
+add_compile_options(-std=c++11)
 
 find_package(Eigen3 REQUIRED)
 
