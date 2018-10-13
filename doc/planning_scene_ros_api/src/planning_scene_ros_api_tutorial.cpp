@@ -34,8 +34,6 @@
 
 /* Author: Sachin Chitta, Michael Lautman */
 
-#define _USE_MATH_DEFINES
-
 #include <ros/ros.h>
 #include <geometry_msgs/Pose.h>
 
