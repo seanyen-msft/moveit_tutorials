@@ -34,8 +34,6 @@
 
 /* Author: Ioan Sucan, Ridhwan Luthra*/
 
-#define _USE_MATH_DEFINES
-
 // ROS
 #include <ros/ros.h>
 
