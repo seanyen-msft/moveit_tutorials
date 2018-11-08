@@ -78,7 +78,7 @@ void publishMarkers(visualization_msgs::MarkerArray& markers)
   if (g_collision_points.markers.size())
   {
     for (int i = 0; i < g_collision_points.markers.size(); i++)
-      g_collision_points.markers[i].action = visualization_msgs::Marker::MK_DELETE;
+      g_collision_points.markers[i].action = visualization_msgs::Marker::DELETE;
 
     g_marker_array_publisher->publish(g_collision_points);
   }
