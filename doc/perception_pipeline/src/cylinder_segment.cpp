@@ -41,6 +41,9 @@
 #include <pcl/filters/extract_indices.h>
 #include <pcl/features/normal_3d.h>
 #include <pcl/segmentation/sac_segmentation.h>
+#ifdef DELETE
+#undef DELETE
+#endif
 
 #include <moveit/planning_scene_interface/planning_scene_interface.h>
 #include <moveit_msgs/CollisionObject.h>
